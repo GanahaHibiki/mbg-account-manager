@@ -25,6 +25,10 @@ class Base{
     return knex(this.table).where('id', '=', id).del();
   }
 
+  selectById (id) {
+    return knex(this.table).where('id', '=', id).select();
+  }
+
 }
 
 module.exports = Base;
