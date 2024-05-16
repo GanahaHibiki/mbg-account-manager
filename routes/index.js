@@ -14,6 +14,11 @@ router.get('/heaven_burns_red', function (req, res, next) {
   res.render('heaven_burns_red', {title: 'Heaven Burns Red'});
 });
 
+// Gakumas Page
+router.get('/gakumas', function (req, res, next) {
+  res.render('gakumas', {title: 'Gakumas'});
+});
+
 // 获取用户信息
 router.get('/get_user', userController.showUser);
 
